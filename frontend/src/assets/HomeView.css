@@ -1,0 +1,268 @@
+.home-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+}
+
+.hero-card, 
+.f-card, 
+.stat-card, 
+.chart-container, 
+.activity-card {
+  background: var(--bg-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  border: 1px solid #f1f5f9;
+}
+
+/* guest home */
+.landing-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-card {
+  padding: 5rem 2rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-card h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.hero-card p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.btn-main {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1.1rem 2.5rem;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 20px -3px rgba(16, 185, 129, 0.4);
+}
+
+/* features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.f-card {
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+  text-align: left;
+}
+
+.f-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.f-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--primary-color);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.f-card:hover::before {
+  opacity: 1;
+}
+
+.f-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: var(--text-main);
+}
+
+/* user home */
+.dashboard-header {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.stats-grid, 
+.charts-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.charts-grid {
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.stat-card {
+  padding: 2rem;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.stat-label {
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+/* charts */
+.chart-container {
+  padding: 1.5rem;
+}
+
+.chart-container h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.canvas-wrapper {
+  height: 300px;
+  position: relative;
+}
+
+/*activity log*/
+.activity-card {
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.live-indicator {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  background: rgba(16, 185, 129, 0.1);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.activity-item {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+.activity-item:hover {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.activity-item.add .status-dot {
+  background: var(--primary-color);
+}
+
+.activity-item.update .status-dot {
+  background: #3b82f6;
+}
+
+.activity-item.delete .status-dot {
+  background: #ef4444;
+}
+
+.activity-text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.activity-time {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.card-footer {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f5f9;
+  text-align: right;
+}
+
+.manage-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-card h1 {
+    font-size: 2.5rem;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

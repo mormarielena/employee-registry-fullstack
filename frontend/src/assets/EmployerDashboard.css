@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+.admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.admin-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.admin-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.delegate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; 
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  align-items: flex-start; 
+}
+
+.input-group .form-group {
+  flex: 1;
+  min-width: 0; 
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+input, 
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e0;
+  background: #f8fafc;
+  font-size: 0.95rem;
+  display: block;
+}
+
+.submit-btn {
+  background: #1e293b;
+  color: #ffffff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.error-hint {
+  color: #ef4444;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.input-error {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+}
+
+.delegate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+
+.delegate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px; 
+  background: #f8fafc; 
+  border: 1px solid #e2e8f0; 
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.delegate-item:hover {
+  transform: translateX(4px); 
+  border-color: #cbd5e0;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; 
+  text-align: left;
+}
+
+.member-info strong {
+  font-size: 1rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.member-info span {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1;
+}
+
+.member-info small {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-weight: 600;
+}
+
+.remove-btn {
+  background: #fff;
+  border: 1px solid #fee2e2;
+  color: #ef4444;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.remove-btn:hover {
+  background: #ef4444;
+  color: #fff;
+  border-color: #ef4444;
+}
+
+@media (max-width: 900px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+  .input-group {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}

@@ -1,0 +1,113 @@
+.hub-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.hub-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hub-header h1 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.hub-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.hub-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hub-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.employer-card:hover {
+  border-bottom: 6px solid #3b82f6;
+}
+
+.employees-card:hover {
+  border-bottom: 6px solid #10b981;
+}
+
+.card-icon {
+  background: #f8fafc;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: #3b82f6;
+}
+
+.employees-card .card-icon {
+  color: #10b981;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.card-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.card-content li {
+  color: #64748b;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-content li::before {
+  content: "•";
+  color: #cbd5e0;
+  font-weight: bold;
+}
+
+.hub-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #f1f5f9;
+  color: #1e293b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hub-card:hover .hub-btn {
+  background: #1e293b;
+  color: #ffffff;
+}
