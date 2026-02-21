@@ -3,6 +3,8 @@
 A full-stack web application for managing employees, developed as an academic project.  
 The application allows creating, viewing, updating, and deleting employee records, with authentication and cloud data storage.
 
+![demo video](./demo/registry_app.gif)
+
 ## Technologies Used
 
 ### Frontend

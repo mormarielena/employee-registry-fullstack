@@ -13,7 +13,7 @@ const db = admin.firestore();
 
 async function seedEmployees(count = 10) {
   const employeesRef = db.collection('employees'); 
-  const targetCompanyId = "L1RXF1LHcBG3lL0dSJII"; 
+  const targetCompanyId = "FGyBE2rWXgUCrYaEy0yc"; 
 
   console.log(`Generez ${count} angajati de test...`);
 
