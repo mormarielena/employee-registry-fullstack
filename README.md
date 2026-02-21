@@ -34,9 +34,13 @@ The application allows creating, viewing, updating, and deleting employee record
 ## Project Structure
 │
 ├── frontend/ # Client-side application (Vite)
+
 ├── backend/ # Server-side API (Node + Express)
+
 ├── .env.example # Environment variables template
+
 ├── .gitignore
+
 └── README.md
 
 
